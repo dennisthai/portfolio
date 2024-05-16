@@ -6,12 +6,12 @@ window.addEventListener("scroll", function(){
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-//Open new tab function
+//Open new tab
 window.onload = function() {
   
   var resumeLink = document.getElementById('resume-link');
   resumeLink.setAttribute('target', '_blank');
-  linkedInLink.setAttribute('rel', 'noopener noreferrer');
+  resumeLink.setAttribute('rel', 'noopener noreferrer');
 
   var linkedInLink = document.getElementById('linkedIn-link');
   linkedInLink.setAttribute('target', '_blank');
