@@ -6,15 +6,13 @@ window.addEventListener("scroll", function(){
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-//Resume open new tab
-document.addEventListener('DOMContentLoaded', function() {
+//Open new tab function
+window.onload = function() {
+  
   var resumeLink = document.getElementById('resume-link');
   resumeLink.setAttribute('target', '_blank');
   linkedInLink.setAttribute('rel', 'noopener noreferrer');
-});
 
-//LinkedIn and Github open new tab
-window.onload = function() {
   var linkedInLink = document.getElementById('linkedIn-link');
   linkedInLink.setAttribute('target', '_blank');
   linkedInLink.setAttribute('rel', 'noopener noreferrer');
@@ -22,8 +20,19 @@ window.onload = function() {
   var githubLink = document.getElementById('github-link');
   githubLink.setAttribute('target', '_blank');
   githubLink.setAttribute('rel', 'noopener noreferrer');
-};
 
+  var jobListingsLink = document.getElementById('joblistings-link');
+  jobListingsLink.setAttribute('target', '_blank');
+  jobListingsLink.setAttribute('rel', 'noopener noreferrer');
+
+  var dogMatchLink = document.getElementById('dogmatch-link');
+  dogMatchLink.setAttribute('target', '_blank');
+  dogMatchLink.setAttribute('rel', 'noopener noreferrer');
+
+  var financeLink = document.getElementById('financedashboard-link');
+  financeLink.setAttribute('target', '_blank');
+  financeLink.setAttribute('rel', 'noopener noreferrer');
+};
 
 //Scroll from nav bar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
