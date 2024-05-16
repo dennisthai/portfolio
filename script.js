@@ -12,6 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
   resumeLink.setAttribute('target', '_blank');
 });
 
+//LinkedIn and Github open new tab
+document.addEventListener('DOMContentLoaded', function() {
+  var linkedInLink = document.getElementById('linkedIn-link');
+  linkedInLink.setAttribute('target', '_blank');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var githubLink = document.getElementById('github-link');
+  githubLink.setAttribute('target', '_blank');
+});
+
+
 //Scroll from nav bar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
