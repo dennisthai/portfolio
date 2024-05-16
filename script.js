@@ -10,17 +10,20 @@ window.addEventListener("scroll", function(){
 document.addEventListener('DOMContentLoaded', function() {
   var resumeLink = document.getElementById('resume-link');
   resumeLink.setAttribute('target', '_blank');
+  linkedInLink.setAttribute('rel', 'noopener noreferrer');
 });
 
 //LinkedIn and Github open new tab
 document.addEventListener('DOMContentLoaded', function() {
   var linkedInLink = document.getElementById('linkedIn-link');
   linkedInLink.setAttribute('target', '_blank');
+  linkedInLink.setAttribute('rel', 'noopener noreferrer');
 });
 
 document.addEventListener('DOMContentLoaded', function() {
   var githubLink = document.getElementById('github-link');
   githubLink.setAttribute('target', '_blank');
+  linkedInLink.setAttribute('rel', 'noopener noreferrer');
 });
 
 
