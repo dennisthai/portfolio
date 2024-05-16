@@ -6,6 +6,12 @@ window.addEventListener("scroll", function(){
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+//Resume open new tab
+document.addEventListener('DOMContentLoaded', function() {
+  var resumeLink = document.getElementById('resume-link');
+  resumeLink.setAttribute('target', '_blank');
+});
+
 //Scroll from nav bar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
